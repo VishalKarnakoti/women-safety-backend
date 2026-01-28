@@ -17,3 +17,6 @@ app.use("/api/alerts", alertRoutes);
 app.listen(5000, () => {
   console.log("Server running on port 5000");
 });
+app.get("/", (req, res) => {
+  res.send("Women Safety Backend is running");
+});
